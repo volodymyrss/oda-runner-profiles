@@ -1,0 +1,2 @@
+deploy_runner_command:  "ygg-submit-array ~/work/baobab/integral-oda-worker/ ci <(seq 0 10)"
+list_runners_command: "ygg-squeue"
