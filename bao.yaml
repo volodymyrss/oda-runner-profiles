@@ -1,2 +1,2 @@
-deploy_runner_command:  "partition=shared-cpu,public-cpu bao-submit-array ~/work/baobab/integral-oda-worker/ ci <(seq 0 10)"
+deploy_runner_command:  "partition=shared-cpu,public-cpu bao-submit-array ~/work/baobab/integral-oda-worker/ ci <(seq 0 20)"
 list_runners_command: "bao-squeue"
