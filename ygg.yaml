@@ -1,2 +1,2 @@
 deploy_runner_command:  "partition=shared-cpu,public-cpu ygg-submit-array ~/work/baobab/integral-oda-worker/ ci <(seq 0 20)"
-list_runners_command: "ygg-squeue"
+list_runners_command: "ygg-squeue  | grep -v bao-squeue | grep -v JOBID | true"
