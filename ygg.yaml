@@ -1,2 +1,4 @@
 deploy_runner_command:  "partition=shared-cpu,public-cpu ygg-submit-array ~/work/baobab/integral-oda-worker/ ci <(seq 0 20)"
 list_runners_command: "ygg-squeue  | grep -v bao-squeue | grep -v JOBID || echo"
+list_inactive_runners_command: "ygg-squeue  | grep -v bao-squeue | grep -v JOBID | grep PD || echo"
+infra_stats_command: "ygg sprio -u savchenk  | sort -u -k 2,3 | awk 'NR==1 {$2=\"pname\"} 1"
